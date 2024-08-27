@@ -1,0 +1,195 @@
+// Home section styling
+
+.home {
+    padding-top: 10rem;
+    text-align: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.mainText {
+    color: var(--blackColor);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 2.5rem;
+
+}
+
+.homeImages {
+    width: 100%;
+    margin: 1rem auto 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5rem;
+}
+
+.vediodiv {
+    width: 100%;
+
+    .vedio {
+        border-radius: 10rem;
+
+    }
+
+}
+
+.plane {
+    position: absolute;
+    width: 100%;
+    top: -10%;
+}
+
+// Home Component Finish
+
+
+// Search Component styling
+
+.search {
+    .sectioncontainer {
+        width: 100%;
+        padding: 1.5rem;
+        border: 2px solid var(--greyBg);
+        border-radius: 16px;
+        row-gap: 2rem;
+    }
+
+    .btns {
+        background: var(--SecondaryColor);
+        padding: .5rem;
+        border-radius: 1rem;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+
+    }
+
+    .Singlebtn {
+        padding: .8rem 1.5rem;
+        font-size: 13px;
+        border-radius: 3rem;
+        width: 80%;
+        text-align: center;
+
+        &:hover {
+            background: var(--PrimaryColor);
+            color: var(--WhiteColor);
+            font-weight: 500;
+            transition: .4s ease;
+
+        }
+
+    }
+
+    .active {
+        background: var(--PrimaryColor);
+        color: var(--WhiteColor);
+        font-weight: 500;
+    }
+
+
+    .searchInputs {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .singleInput {
+            .iconDiv {
+                padding: 16px 10px;
+                border-radius: 3rem;
+                background: var(--SecondaryColor);
+                margin-right: 1rem;
+
+                .icon {
+                    color: var(--blackColor);
+                    opacity: .7;
+
+                }
+
+            }
+
+            .texts {
+                h4 {
+                    padding-top: 0;
+                    padding-bottom: .7rem;
+                    color: var(--blackColor);
+                    font-weight: 700;
+                }
+
+                input {
+                    width: 95%;
+                    border: none;
+                    outline: none;
+                    background: transparent;
+
+                    &::placeholder {
+                        font-size: 12px;
+                        opacity: .5;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// Search component finish
+
+// Support component start
+.support {
+    .sectioncontainer {
+        .titlesdiv {
+            text-align: center;
+
+            small {
+                letter-spacing: -8rem;
+                text-transform: uppercase;
+                font-size: 13px;
+                color: var(--blackColor);
+                line-height: 1.5rem;
+            }
+        }
+
+        .infoDiv {
+            margin-top: 2rem;
+            gap: 1.5rem;
+
+            .textDiv {
+                gap: 1.5rem;
+
+
+                .singleinfo {
+                    .number {
+                        background: var(--PrimaryColor);
+                        padding: 5px 12px;
+                        width: 40px;
+                        border-radius: 3rem;
+                        text-align: center;
+                        font-size: 13px;
+                        font-weight: 700;
+                        color: var(--WhiteColor);
+                    }
+
+                    .colorOne {
+                        background: var(--colorOne);
+                    }
+
+                    .colorTwo {
+                        background: var(--colorTwo);
+                    }
+                }
+            }
+
+
+            .imgDiv {
+                margin: auto;
+
+                img {
+                    width: 100%;
+                    max-width: 420px;
+                }
+            }
+        }
+    }
+}
